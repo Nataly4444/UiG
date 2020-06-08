@@ -1,0 +1,111 @@
+.summary {}
+
+.graphics {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.double-graphic {
+    display: flex;
+    flex-direction: column;
+    width: 66.02%;
+    justify-content: space-between;
+}
+
+.graphic {
+    /* box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.12); */
+    border-radius: 4px;
+    display: flex;
+}
+
+.graphic img {
+    width: 100%;
+}
+
+.alpha {
+    background: url('../img/Main-progress.svg') no-repeat center top / cover;
+    height: 180px;
+    width: 100%;
+}
+
+.core-task {
+    height: 148px;
+    width: 100%;
+    background: url('../img/Core-task.svg') no-repeat center top / cover;
+}
+
+.health {
+    width: 32%;
+    height: 344px;
+    /* width: 348px; */
+    background: url('../img/Project-Health.svg') no-repeat center top / cover;
+}
+
+@media(max-width: 768px) {
+    .graphics {
+        flex-direction: column;
+    }
+    .double-graphic {
+        width: 100%;
+    }
+    .core-task {
+        margin: 12px 0 36px;
+    }
+    .health {
+        width: 100%;
+        background: url('../img/ProjectHealth768.svg') no-repeat center top / cover;
+        height: 228px;
+    }
+}
+
+@media(max-width: 420px) {
+    .graphics {
+        flex-direction: column;
+    }
+    .double-graphic {
+        width: 100%;
+    }
+    .alpha {
+        background: url('../img/Alpha375.svg') no-repeat center top / cover;
+        height: 203px;
+        width: 100%;
+    }
+    .core-task {
+        margin: 12px 0 16px;
+        background: url('../img/Core-task375.svg') no-repeat center top / cover;
+        height: 160px;
+        width: 100%;
+    }
+    .health {
+        width: 100%;
+        background: url('../img/Project-health375.svg') no-repeat center top / cover !important;
+        height: 268px;
+    }
+}
+
+@media(max-width: 376px) {
+    .graphics {
+        flex-direction: column;
+    }
+    .double-graphic {
+        width: 100%;
+    }
+    .alpha {
+        background: url('../img/Alpha375.svg') no-repeat center top / cover;
+        height: 203px;
+        width: 100%;
+    }
+    .core-task {
+        margin: 12px 0 16px;
+        background: url('../img/Core-task375.svg') no-repeat center top / cover;
+        height: 160px;
+        width: 100%;
+    }
+    .health {
+        width: 100%;
+        background: url('../img/Project-health375.svg') no-repeat center top / cover !important;
+        height: 268px;
+    }
+}

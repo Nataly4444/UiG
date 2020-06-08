@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    margin: 0 auto;
+    width: 81%;
+    height: inherit;
+    font-family: 'Lato', sans-serif;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    color: #33334B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 120%;
+    margin: 48px 0 32px;
+    text-decoration: none;
+}
+
+.main-background {
+    background-color: #F6F6F6;
+}
+
+@media(max-width: 768px) {
+    .main-container {
+        width: 92.7%;
+    }
+    .title {
+        margin: 48px 0 24px;
+    }
+}
+
+@media(max-width: 375px) {
+    .main-container {
+        width: 91.46%;
+    }
+    .title {
+        font-size: 24px;
+        margin: 40px 0 16px !important;
+    }
+}

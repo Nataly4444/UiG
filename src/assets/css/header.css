@@ -1,0 +1,157 @@
+.header {
+    background-color: #33334B;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    justify-content: space-between;
+}
+
+.mini-header-container {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    width: 80%;
+}
+
+.header-logo {
+    width: 15%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    height: 40px;
+}
+
+.gradient {
+    background: linear-gradient(95.18deg, #1A1A2B 7.1%, rgba(26, 26, 43, 0) 91.72%);
+    opacity: 0.7;
+    height: auto;
+    width: 32px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: -8px;
+}
+
+.navigation-arrow {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-decoration: none;
+}
+
+.navigation-arrow span {
+    color: #C1D4F1;
+    opacity: 0.8;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.prev-img,
+.next-img {}
+
+.next-img {
+    transform: rotate(180deg);
+    margin-left: 6px;
+}
+
+.prev-img {
+    margin-right: 6px;
+}
+
+.prev {
+    margin-right: 14px;
+}
+
+.next {
+    margin-left: 14px;
+    display: none;
+}
+
+.data {
+    color: #FFFFFF;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 120%;
+}
+
+.updates {
+    color: #C1D4F1;
+    opacity: 0.8;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .mini-header-container {
+        width: 88.3%;
+    }
+    .header-logo {
+        width: 19.52%;
+    }
+    .updates {
+        text-align: end;
+        width: 15.6%;
+    }
+}
+
+@media(max-width: 420px) {}
+
+@media(max-width: 376px) {
+    .header-container {
+        justify-content: flex-start;
+    }
+    .mini-header-container {
+        width: 35%;
+    }
+    .gradient {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .updates {
+        text-align: start;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .updates p {
+        text-align: start;
+        width: 50%;
+        margin-left: 12px;
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+    }
+}

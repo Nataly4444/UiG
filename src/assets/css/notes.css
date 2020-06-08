@@ -1,0 +1,50 @@
+.notes {}
+
+.notes hr {
+    background: #D6D6D6;
+    margin-top: 56px;
+    border: 1px solid #D6D6D6;
+}
+
+.notes-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    color: #5A5A6E;
+    text-align: left;
+    margin: 20px 0 12px;
+}
+
+.notes-information {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 20px;
+    color: #5A5A6E;
+    text-align: left;
+    padding-bottom: 80px;
+}
+
+.notes-information p {}
+
+@media(max-width: 768px) {
+    .notes hr {
+        margin-top: 48px;
+    }
+    .notes-information {
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 375px) {
+    .notes hr {
+        margin-top: 40px;
+    }
+    .notes-information p:nth-child(2) {
+        margin: 20px 0;
+    }
+    .notes-information {
+        padding-bottom: 30px;
+    }
+}
