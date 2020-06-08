@@ -43,6 +43,29 @@
     background: url('../img/Project-Health.svg') no-repeat center top / cover;
 }
 
+.progress {
+    height: 30px;
+    background: #ccc;
+    display: flex;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    font: 16px/1 Arial;
+    position: relative;
+}
+
+.progress-name {
+    color: #fff;
+    position: absolute;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
 @media(max-width: 768px) {
     .graphics {
         flex-direction: column;

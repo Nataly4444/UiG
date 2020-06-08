@@ -10,6 +10,19 @@
           <div class="graphic core-task">
             <!-- <img src="../assets/img/Core-task.svg" alt="" /> -->
           </div>
+          <h1>Core task: {{ task }}</h1>
+            <div class="progress">
+              <div
+                class="progress-bar"
+                v-for="item in progress"
+                :key="item.id"
+                :style="{ 'background' : item.isDone ? '#18B573' : '#3282FA', 'width' : `${item.count / task * 100}%` }"
+              >
+                <div class="progress-name">
+                  {{ item.count }} <span>{{ item.isDone ? 'done' : 'in progress' }}</span>
+                </div>
+              </div>
+            </div>
         </div>
         <div class="graphic health">
           <!-- <img src="../assets/img/Project-Health.svg" alt="" /> -->
@@ -20,7 +33,17 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      task: 42,
+      progress: [
+        { id: 1, count: 28, isDone: true },
+        { id: 2, count: 7, idDone: false }
+      ]
+    };
+  }
+};
 </script>
 
 <style>
