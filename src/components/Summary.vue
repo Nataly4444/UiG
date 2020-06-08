@@ -23,6 +23,20 @@
                 </div>
               </div>
             </div>
+
+            <br><hr><br>
+
+            <div class="circle-wrap">
+              <div class="circle">
+                <div class="circle__range" :style="{ 'transform' : `rotate(-${circles}deg)` }"></div>
+              </div>
+              
+              <div class="circle-res">
+                {{ circleRes }}%
+              </div>
+              <div class="circle-min">0%</div>
+              <div class="circle-max">{{ circle }}%</div>
+            </div>
         </div>
         <div class="graphic health">
           <!-- <img src="../assets/img/Project-Health.svg" alt="" /> -->
@@ -40,8 +54,15 @@ export default {
       progress: [
         { id: 1, count: 28, isDone: true },
         { id: 2, count: 7, idDone: false }
-      ]
+      ],
+      circle: 120,
+      circleRes: 50
     };
+  },
+  computed: {
+    circles() {
+      return 180 - (this.circleRes / this.circle * 180)
+    }
   }
 };
 </script>

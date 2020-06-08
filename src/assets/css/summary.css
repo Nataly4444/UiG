@@ -66,6 +66,69 @@
     white-space: nowrap;
 }
 
+.circle {
+    height: 100px;
+    background: #E8E8E8;
+    border-radius: 100px 100px 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    margin: 7% 7% 0 7%;
+    border-radius: 100px 100px 0 0;
+    z-index: 2;
+}
+
+.circle__range {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #18B573;
+    border-radius: 100px 100px 0 0;
+    transform: rotate(-180deg);
+    transform-origin: bottom center;
+    transition: transform 1s linear;
+}
+
+.circle-wrap {
+    position: relative;
+    width: 200px;
+}
+
+.circle-min,
+.circle-max,
+.circle-res {
+    font: 12px/1 Arial;
+    position: absolute;
+    top: 100%;
+    margin-top: 5px;
+}
+
+.circle-min {
+    left: 0;
+}
+
+.circle-max {
+    right: 0;
+}
+
+.circle-res {
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 20px;
+}
+
 @media(max-width: 768px) {
     .graphics {
         flex-direction: column;
