@@ -1,0 +1,126 @@
+.for-review {}
+
+.review-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.one-review {
+    /* width: 348px; */
+    width: 32%;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.one-review img {
+    width: 100%;
+}
+
+.one-review:hover {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.one-review-text {
+    background-color: #fff;
+}
+
+.one-review-text-container {
+    margin-left: 24px;
+}
+
+.pre-review-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #33334B;
+    margin-top: 24px;
+}
+
+.review-title {
+    color: #3282FA;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 8px 0 16px;
+}
+
+.small-text {
+    color: #5A5A6E;
+    opacity: 0.8;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    margin-bottom: 25px;
+}
+
+.mobile {
+    display: none;
+}
+
+@media(max-width: 768px) {
+    .one-review {
+        width: 48.45%;
+        margin-top: 24px;
+    }
+    .one-review:nth-child(1) {
+        margin-top: 0;
+    }
+    .one-review:nth-child(2) {
+        margin-top: 0;
+    }
+    .small-text {
+        color: #5A5A6E;
+        opacity: 0.8;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 120%;
+        margin-bottom: 25px;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 375px) {
+    .desctop {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+    .one-review {
+        width: 100%;
+        flex-direction: row;
+    }
+    .one-review img {
+        width: 37.57%;
+    }
+    .one-review-text-container {
+        margin-left: 16px;
+    }
+    .review-title {
+        margin: 8px 0 12px;
+    }
+    .small-text {
+        margin-bottom: 24px;
+        width: 80%;
+    }
+    .one-review:nth-child(1) {
+        margin-top: 0;
+    }
+    .one-review:nth-child(2) {
+        margin-top: 16px;
+    }
+    .one-review {
+        margin-top: 16px;
+    }
+}

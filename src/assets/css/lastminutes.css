@@ -1,0 +1,107 @@
+.lastminutes {}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.accordion-item {
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.accordion-item:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.accordion-item:last-child {
+    margin-bottom: 0px;
+}
+
+.accordion-header {
+    height: 60px;
+    color: #33334B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-item-body {
+    background-color: #fff;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+
+.accordion-item-body-container {
+    margin: 0 70px 24px 24px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #33334B;
+}
+
+.accordion-item-body-container p {
+    margin: 16px 0;
+}
+
+.accordion-item-body-container p:nth-child(1) {
+    margin: 0;
+}
+
+.accordion-item-body-mini-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.text-green {
+    background: #17B573;
+    border-radius: 2px;
+    color: #fff;
+    padding: 2px 6px;
+    margin-left: 16px;
+}
+
+@media(max-width: 768px) {
+    .accordion-item-body-container p {
+        margin: 12px 0;
+    }
+}
+
+@media(max-width: 375px) {
+    .accordion-header {
+        height: 50px;
+        margin: 0 16px;
+    }
+    .accordion-item-body-container {
+        margin: 0 16px 16px 16px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        color: #33334B;
+    }
+    .accordion-item-body-container p {
+        margin: 8px 0;
+    }
+    .accordion-item-body-mini-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text-green {
+        margin-left: 0;
+    }
+}
