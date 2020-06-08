@@ -5,7 +5,7 @@
     <Summary />
     <ForReview />
     <LastMinutes />
-    <Documents />
+    <!-- <Documents /> -->
 
     <Notes />
   </div>
@@ -24,7 +24,7 @@ import Summary from "@/components/Summary.vue";
 import ForReview from "@/components/ForReview.vue";
 
 import LastMinutes from "@/components/LastMinutes.vue";
-import Documents from "@/components/Documents.vue";
+// import Documents from "@/components/Documents.vue";
 import Notes from "@/components/Notes.vue";
 
 export default {
@@ -37,7 +37,7 @@ export default {
     ForReview,
 
     LastMinutes,
-    Documents,
+    // Documents,
     Notes,
   },
 };
