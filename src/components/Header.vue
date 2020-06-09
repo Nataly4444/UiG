@@ -49,4 +49,5 @@ export default {
 <style scoped>
 @import "../assets/css/main.css";
 @import "../assets/css/header.css";
+/* @import "../assets/fonts/lato/stylesheet.css"; */
 </style>
