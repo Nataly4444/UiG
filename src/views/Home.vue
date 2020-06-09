@@ -13,7 +13,7 @@
 
 <style>
 @import "../assets/css/main.css";
-/* @import "../assets/css/stylename.css"; */
+@import "../assets/fonts/lato/stylesheet.css";
 </style>
 
 <script>
