@@ -7,21 +7,37 @@
           <div class="graphic alpha">
             <div class="container-90">
               <div class="graphic-title">Alpha {{ alpha }}</div>
-              <div class="progress">
-                <div class="progress-bar"
-                  :style="{
-                    background: '#18B573',
-                    width: `${alphaprogress}%`,
-                  }">
-                  <div class="progress-name">
-                     {{ alphaprogress }}%
-                    <span></span>
+              <div class="progress-container">
+                <div class="progress">
+                  <div
+                    class="progress-bar"
+                    :style="{
+                      background: '#18B573',
+                      width: `${alphaprogress}%`,
+                    }"
+                  >
+                    <div class="progress-name">
+                      {{ alphaprogress }}%
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="one-point">
+                  <div class="one-point-text">
+                    <div class="point-text-span">Estimate Date</div>
+                    <div class="point-text-data">August 17, 2020</div>
+                  </div>
+                  <div class="point-circle"></div>
+                </div>
+                <div class="two-point">
+                  <div class="point-circle"></div>
+                  <div class="two-point-text">
+                    <div class="point-text-span">Planned Date</div>
+                    <div class="point-text-data">August 23, 2020</div>
                   </div>
                 </div>
               </div>
             </div>
-
-
           </div>
           <div class="core-task">
             <div class="container-90">
@@ -44,34 +60,37 @@
               </div>
             </div>
           </div>
-
-         
         </div>
         <div class="graphic health">
           <div class="container-health">
-             <div class="circle-wrap">
-            <div class="circle">
-              <div
-                class="circle__range"
-                :style="{ transform: `rotate(-${circles}deg)` }"
-              ></div>
+            <div class="circle-wrap">
+              <div class="circle">
+                <div
+                  class="circle__range"
+                  :style="{ transform: `rotate(-${circles}deg)` }"
+                ></div>
+              </div>
+
+              <div class="circle-res">
+                <img
+                  class="icon-health"
+                  src="../assets/img/health.svg"
+                  alt=""
+                />
+                {{ circleRes }}%
+                <div class="speed">2% ↑</div>
+              </div>
+              <div class="circle-min">0%</div>
+              <div class="circle-max">{{ circle }}%</div>
             </div>
-
-            <div class="circle-res">
-              <img class="icon-health" src="../assets/img/health.svg" alt="">
-              {{ circleRes }}%
-              <div class="speed">2% ↑</div>
+            <div class="health-text">
+              <div class="health-text-title">Project Health</div>
+              <div class="health-text-info">
+                Project health is an integrated metric based on team speed, work
+                quality, and organization degree.
+              </div>
             </div>
-            <div class="circle-min">0%</div>
-            <div class="circle-max">{{ circle }}%</div>
           </div>
-          <div class="health-text">
-            <div class="health-text-title">Project Health</div>
-            <div class="health-text-info">Project health is an integrated metric based on team speed, work quality, and organization degree.</div>
-          </div>
-
-          </div>
-
         </div>
       </div>
     </div>

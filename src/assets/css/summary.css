@@ -84,13 +84,20 @@
     align-items: center;
 }
 
+.progress-container {
+    display: ;
+    position: relative;
+    height: ;
+}
+
 .progress {
     height: 32px;
     background: #E8E8E8;
     display: flex;
     border-radius: 100px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    position: relative;
 }
 
 .progress-bar {
@@ -235,6 +242,64 @@
     line-height: 120%;
 }
 
+.point-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border: 3px solid #17B573;
+    box-sizing: border-box;
+    border-radius: 100%;
+    position: absolute;
+    right: -5%;
+}
+
+.one-point {
+    display: block;
+    position: absolute;
+    bottom: 65%;
+    right: 6%;
+    border-right: 1px solid #C4C4C4;
+}
+
+.one-point-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 0px 5px 30px 0;
+}
+
+.two-point {
+    display: block;
+    position: absolute;
+    right: 3%;
+    top: 35%;
+    border-right: 1px solid #C4C4C4;
+}
+
+.two-point-text {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin: 30px 5px 0 0;
+}
+
+.point-text-span {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 120%;
+    color: #666666;
+}
+
+.point-text-data {
+    color: #33334B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+
 @media(max-width: 768px) {
     .graphics {
         flex-direction: column;
@@ -353,6 +418,21 @@
     .core-task {
         margin: 16px 0 16px;
     }
+    .one-point {
+        right: 13%;
+    }
+    .one-point-text {
+        margin: 0px 5px 30px 0;
+    }
+    .two-point {
+        right: 6%;
+    }
+    .two-point-text {
+        margin: 30px 5px 0 0;
+    }
+    .progress {
+        margin: 60px 0;
+    }
 }
 
 @media(max-width: 376px) {
@@ -438,5 +518,20 @@
     }
     .core-task {
         margin: 16px 0 16px;
+    }
+    .one-point {
+        right: 13%;
+    }
+    .one-point-text {
+        margin: 0px 5px 30px 0;
+    }
+    .two-point {
+        right: 6%;
+    }
+    .two-point-text {
+        margin: 30px 5px 0 0;
+    }
+    .progress {
+        margin: 60px 0;
     }
 }
