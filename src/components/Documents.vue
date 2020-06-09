@@ -43,18 +43,6 @@ export default {
       ],
       doc: [
         {
-          role: ["All", "Development"],
-          name: "Project chapter",
-          txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
-        },
-        {
-          role: ["All", "Development"],
-          name: "Project chapter",
-          txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
-        },
-        {
           role: ["All", "Marketing"],
           name: "Project chapter",
           txt:
@@ -62,46 +50,89 @@ export default {
         },
         {
           role: ["All", "Marketing"],
-          name: "Project chapter",
+          name: "Detailed plan - internal",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "In convallis, lacus eget euismod elementum, magna ante"
         },
         {
           role: ["All", "Marketing"],
-          name: "Project chapter",
+          name: "Presentation with core features",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
-        },
-        {
-          role: ["All", "Development"],
-          name: "Project chapter",
-          txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "The presentation contains actual within the MVP along  with the features that will be developed during the next development stages"
         },
         {
           role: ["All", "Marketing"],
-          name: "Project chapter",
+          name: "Competitors research",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "Competitors research with an info on the competitors general data"
         },
         {
           role: ["All", "Marketing"],
-          name: "Project chapter",
+          name: "KPI",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "The explanation of the work KPI estimations"
         },
         {
           role: ["All", "Marketing"],
-          name: "Project chapter",
+          name: "Initial user acquisition",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "Overview of the possible user acquisition strategies"
         },
         {
           role: ["All", "Development"],
-          name: "Project chapter",
+          name: "User Flow",
           txt:
-            "The document provides a general project overview, it's mission anddevelopment direction"
+            "User Flow on the tournament creation and participation"
+        },
+        {
+          role: ["All", "Development"],
+          name: "Payment systems and integrations",
+          txt:
+            "Proposal on the payment system structure and features"
+        },
+        {
+          role: ["All", "Development"],
+          name: "Virtual currency",
+          txt:
+            "Proposal on the virtual currency functionality"
+        },
+        {
+          role: ["All", "Development"],
+          name: "White Label specifications",
+          txt:
+            "White Label concept and initial features to develop"
+        },
+        {
+          role: ["All", "Development"],
+          name: "White label - possible solutions",
+          txt:
+            "White Label concept and initial features to develop"
+        },
+        {
+          role: ["All", "Development"],
+          name: "Brackets",
+          txt:
+            "Pros and Cons of the own brackets development"
+        },
+        {
+          role: ["All", "Development"],
+          name: "How Brackets work",
+          txt:
+            "Overview of the brackets mechanics"
+        },
+        {
+          role: ["All", "Development"],
+          name: "Leaderboards system",
+          txt:
+            "Overview of the Leaderboards mechanics"
+        },
+        {
+          role: ["All", "Development"],
+          name: "Battle Royale",
+          txt:
+            "Mechanics of the Battle Royale tournaments"
         }
+
       ]
     };
   }

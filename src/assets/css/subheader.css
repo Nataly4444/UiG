@@ -6,7 +6,7 @@
     -webkit-position: sticky;
     -moz-position: sticky;
     position: sticky;
-    top: 0;
+    top: 70px;
     z-index: 100;
 }
 
