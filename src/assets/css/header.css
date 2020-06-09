@@ -124,7 +124,35 @@
     }
 }
 
-@media(max-width: 420px) {}
+@media(max-width: 420px) {
+    .header-container {
+        justify-content: flex-start;
+    }
+    .mini-header-container {
+        width: 35%;
+    }
+    .gradient {
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .updates {
+        text-align: start;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .updates p {
+        text-align: start;
+        width: 50%;
+        margin-left: 12px;
+    }
+    .burger-menu {
+        display: flex;
+        justify-content: center;
+    }
+}
 
 @media(max-width: 376px) {
     .header-container {
