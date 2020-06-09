@@ -23,8 +23,8 @@
         </div>
         <div class="updates">
           <p>Last updated: 3 hours ago</p> 
-           <a href="" class="burger-menu" @click="show = !show"><img src="../assets/img/burger.svg" alt=""></a>
-        <!-- <a href="" class="burger-menu"><img src="../assets/img/close.svg" alt=""></a> -->
+            <a href="" class="burger-menu" @click="show = !show"><img src="../assets/img/burger.svg" alt=""></a>
+            <!-- <a href="" class="burger-menu"><img src="../assets/img/close.svg" alt=""></a> -->
 
         </div>
        
