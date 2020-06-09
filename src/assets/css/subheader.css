@@ -3,6 +3,11 @@
     background: #FFFFFF;
     height: 70px;
     width: 100%;
+    -webkit-position: sticky;
+    -moz-position: sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .menu-container {
