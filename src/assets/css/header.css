@@ -18,6 +18,14 @@
     justify-content: space-between;
 }
 
+.header-container-mini {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    justify-content: space-between;
+}
+
 .mini-header-container {
     display: flex;
     flex-direction: row;
@@ -49,6 +57,13 @@
     align-items: center;
     flex-direction: row;
     margin-left: -8px;
+}
+
+.navigation2 {
+    display: none;
+    align-items: center;
+    flex-direction: row;
+    /* margin-left: -8px; */
 }
 
 .navigation-arrow {
@@ -141,6 +156,9 @@
     }
     .navigation {
         display: none;
+    }
+    .navigation2 {
+        display: flex;
     }
     .updates {
         text-align: start;

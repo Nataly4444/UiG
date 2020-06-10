@@ -93,3 +93,18 @@
     width: 100%;
     display: block;
 }
+
+@media(max-width: 768px) {
+    .tasks {
+        width: 50%;
+    }
+    .matrix {
+        width: 50%;
+    }
+}
+
+@media(max-width: 420px) {
+    .taskspace {
+        display: none;
+    }
+}

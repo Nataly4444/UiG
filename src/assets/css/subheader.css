@@ -49,16 +49,17 @@
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
     }
-
     .menu-container {
         display: block;
         white-space: nowrap;
     }
-
     .one-menu {
         display: inline-block;
         height: 70px;
         line-height: 70px;
+    }
+    .one-menu:active {
+        margin-top: 0;
     }
 }
 
