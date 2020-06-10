@@ -8,8 +8,8 @@
             <div class="tasks-title">Use of Funds</div>
             <div class="block-with-tasks">
             <div class="tasks-title-2" @click="show = !show">
-                <!-- <div class="box-task" v-if="show=false">+</div>
-                <div class="box-task" v-else>-</div>  -->
+                <div class="box-task" v-if="show==false">+</div>
+                <div class="box-task" v-else>-</div> 
             Setup<span> (12)</span></div>
             <transition name="fade">
                 <div v-if="show" class="mini-block-with-tasks">
@@ -20,8 +20,8 @@
           </div>
               <div class="block-with-tasks">
             <div class="tasks-title-2" @click="show2 = !show2">
-                <!-- <div class="box-task" v-if="show=false">+</div>
-                <div class="box-task" v-else>-</div>  -->
+                <div class="box-task" v-if="show2==false">+</div>
+                <div class="box-task" v-else>-</div> 
             Features for future releases<span>(19)</span></div>
             <transition name="fade">
                 <div v-if="show2" class="mini-block-with-tasks">
@@ -33,9 +33,9 @@
 
               <div class="block-with-tasks">
             <div class="tasks-title-2" @click="show3 = !show3">
-                <!-- <div class="box-task" v-if="show=false">+</div>
-                <div class="box-task" v-else>-</div>  -->
-            Features for future releases<span>(24)</span></div>
+                <div class="box-task" v-if="show3==false">+</div>
+                <div class="box-task" v-else>-</div> 
+            Documentation<span>(24)</span></div>
             <transition name="fade">
                 <div v-if="show3" class="mini-block-with-tasks">
                 <div class="one-task" v-for="item in documentation"  :key="item.task"> {{item.task}}</div>
