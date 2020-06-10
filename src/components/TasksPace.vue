@@ -7,10 +7,38 @@
           <div class="tasks-container-center">
             <div class="tasks-title">Use of Funds</div>
             <div class="block-with-tasks">
-            <div class="tasks-title-2" @click="show = !show">Setup <span>(12)</span></div>
+            <div class="tasks-title-2" @click="show = !show">
+                <!-- <div class="box-task" v-if="show=false">+</div>
+                <div class="box-task" v-else>-</div>  -->
+            Setup<span> (12)</span></div>
             <transition name="fade">
                 <div v-if="show" class="mini-block-with-tasks">
                 <div class="one-task" v-for="item in setup"  :key="item.task"> {{item.task}}</div>
+            </div>
+            </transition>
+            
+          </div>
+              <div class="block-with-tasks">
+            <div class="tasks-title-2" @click="show2 = !show2">
+                <!-- <div class="box-task" v-if="show=false">+</div>
+                <div class="box-task" v-else>-</div>  -->
+            Features for future releases<span>(19)</span></div>
+            <transition name="fade">
+                <div v-if="show2" class="mini-block-with-tasks">
+                <div class="one-task" v-for="item in features"  :key="item.task"> {{item.task}}</div>
+            </div>
+            </transition>
+            
+          </div>
+
+              <div class="block-with-tasks">
+            <div class="tasks-title-2" @click="show3 = !show3">
+                <!-- <div class="box-task" v-if="show=false">+</div>
+                <div class="box-task" v-else>-</div>  -->
+            Features for future releases<span>(24)</span></div>
+            <transition name="fade">
+                <div v-if="show3" class="mini-block-with-tasks">
+                <div class="one-task" v-for="item in documentation"  :key="item.task"> {{item.task}}</div>
             </div>
             </transition>
             
@@ -19,7 +47,9 @@
           
         </div>
 
-        <div class="matrix"></div>
+        <div class="matrix">
+            <img src="../assets/img/Task-Pace.jpg" alt="">
+        </div>
       </div>
     </div>
   </div>
@@ -30,6 +60,8 @@ export default {
   data() {
     return {
         show: false,
+        show2: false,
+        show3: false,
         setup:[
              {  task: "Project set up"},
             { task: "Project initiation"},
@@ -100,9 +132,67 @@ export default {
              { task: "Online Events"},
              { task: "Offline Events"},
              { task: "Fair play"},
-             { task: "Trainings"},
-             
-        ] }
+             { task: "Trainings"}
+        ],
+         features: [
+            { task: "Authorization security options"},
+            { task: "Head-to-head tournaments"},
+            { task: "Bracketed tournaments"},
+            { task: "Paid tournaments"},
+            { task: "Prizes section at the tournament page"},
+            { task: "Age requirements logic"},
+            { task: "Admin panel with the White Label features"},
+            { task: "White label for the platform"},
+            { task: "White label for the tournament"},
+            { task: "White label of the features availability"},
+            { task: "White label landings"},
+            { task: "White label promotion"},
+            { task: "Player's stats"},
+            { task: "Teams ranks"},
+            { task: "Personalization"},
+            { task: "User's preferences settings tab in the user profile"},
+            { task: "Suggestions for the user on how to move up"},
+            { task: "Game supported"},
+            { task: "Integration"},
+            { task: "Tournaments matching"},
+            { task: "Team matching"},
+            { task: "Gamification"},
+            { task: "Game bets"},
+            { task: "AI engine"},
+            { task: "Points system as  virtual currency"},
+            { task: "In-app purchases"},
+            { task: "Referral system"},
+        ],
+        documentation: [
+            { task: "Project charter"},
+            { task: "Detailed plan"},
+            { task: "Budget"},
+            { task: "Competitors research"},
+            { task: "User flow"},
+            { task: "Virtual currency overview"},
+            { task: "Payment systems and integrations"},
+            { task: "Marketing: initial user acquisition"},
+            { task: "White Label options and overview"},
+            { task: "Virtual Currency research"},
+            { task: "Research on competitors features"},
+            { task: "Marketing plan"},
+            { task: "Marketing strategy"},
+            { task: "Market and competitors research"},
+            { task: "Demographic research"},
+            { task: "Traffic report"},
+            { task: "Promo budget"},
+            { task: "Promo strategy"},
+            { task: "Marketing activities reports"},
+            { task: "Video production plan"},
+            { task: "Videos scenarios"},
+            { task: "SEO plan"},
+            { task: "Keywords list"},
+            { task: "Semantic core"},
+            { task: "Touchpoint map"},
+            { task: "Copyright content"}
+        ]
+     }
+      
     }
  
 };
