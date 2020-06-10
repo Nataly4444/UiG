@@ -3,7 +3,7 @@
     <div class="main-container">
       <div class="title">For Review <a name='forreview' style="padding-top: 180px"></a></div>
       <div class="review-container">
-        <a href="" class="one-review">
+        <a href="https://uig.360bound.us/plugs/images/comingsoon.jpg" class="one-review">
           <img src="../assets/img/1.jpg" class="desctop" alt="" />
           <img src="../assets/img/01-mob.jpg" class="mobile" alt="" />
           <div class="one-review-text">
