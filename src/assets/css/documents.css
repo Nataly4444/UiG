@@ -123,9 +123,9 @@
         width: 100%;
         margin-top: 16px;
     }
-    .one-document:first-child {
-        margin-top: 24px;
-    }
+    /* .one-document:first-child {
+        margin-top: 20px;
+    } */
     .document-text {
         margin: 0 16px 16px 16px;
     }
