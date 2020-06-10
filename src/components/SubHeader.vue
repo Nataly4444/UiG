@@ -1,6 +1,6 @@
 <template>
   <div class="subheader">
-    <div class="main-container">
+    <div class="main-container menu">
       <div class="menu-container">
         <a class="one-menu" href="#summary">
           Summary

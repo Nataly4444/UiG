@@ -43,6 +43,23 @@
     margin-top: 3px;
 }
 
-@media(max-width: 375px) {}
+@media(max-width: 768px) {
+    .menu {
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
 
-@media(max-width: 768px) {}
+    .menu-container {
+        display: block;
+        white-space: nowrap;
+    }
+
+    .one-menu {
+        display: inline-block;
+        height: 70px;
+        line-height: 70px;
+    }
+}
+
+@media(max-width: 375px) {}
