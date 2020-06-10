@@ -4,6 +4,7 @@
     <SubHeader />
     <Summary />
     <ForReview />
+    <TasksPace />
     <LastMinutes />
     <Documents />
 
@@ -22,6 +23,7 @@ import Header from "@/components/Header.vue";
 import SubHeader from "@/components/SubHeader.vue";
 import Summary from "@/components/Summary.vue";
 import ForReview from "@/components/ForReview.vue";
+import TasksPace from "@/components/TasksPace.vue";
 
 import LastMinutes from "@/components/LastMinutes.vue";
 import Documents from "@/components/Documents.vue";
@@ -35,6 +37,7 @@ export default {
     SubHeader,
     Summary,
     ForReview,
+    TasksPace,
 
     LastMinutes,
     Documents,

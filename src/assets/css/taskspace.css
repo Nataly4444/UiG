@@ -1,0 +1,65 @@
+.taskspace {}
+
+.tasks-container {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.tasks {
+    width: 34%;
+}
+
+.tasks-container-center {
+    width: 76.3586957%;
+    margin: 0 auto;
+}
+
+.tasks-title {
+    color: #33334B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 26px 0;
+}
+
+.tasks-title-2 {
+    color: #33334B;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.tasks-title-2>span {
+    color: #A1A1A1;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.block-with-tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.one-task {
+    color: #33334B;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 32px;
+    margin: 20px 0;
+}
+
+.one-task:first-child {
+    margin: 0 0 20px 0;
+}
+
+.matrix {
+    width: 66%;
+}
