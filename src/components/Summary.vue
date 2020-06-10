@@ -1,7 +1,7 @@
 <template>
   <div class="summary">
     <div class="main-container">
-      <div class="title">Project Dashboard <a name="summary"></a></div>
+      <div class="title">Project Dashboard <a name="summary" style="padding-top: 190px"></a></div>
       <div class="graphics">
         <div class="double-graphic">
           <div class="graphic alpha">

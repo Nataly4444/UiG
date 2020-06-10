@@ -1,7 +1,7 @@
 <template>
   <div class="for-review">
     <div class="main-container">
-      <div class="title">For Review <a name='forreview'></a></div>
+      <div class="title">For Review <a name='forreview' style="padding-top: 180px"></a></div>
       <div class="review-container">
         <a href="" class="one-review">
           <img src="../assets/img/1.jpg" class="desctop" alt="" />
