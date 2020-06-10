@@ -1,7 +1,7 @@
 <template>
 <div class="lastminutes">
     <div class="main-container">
-        <div class="title">Last Minutes<a name='lastminutes'></a></div>
+        <div class="title">Last Minutes<a name='lastminutes' style="padding-top: 180px"></a></div>
         <div class="accordion">
             <!-- 1 -->
             <div class="accordion-item">
