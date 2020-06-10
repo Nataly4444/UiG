@@ -8,7 +8,7 @@
         <a class="one-menu" href="#forreview">
           For Review
         </a>
-        <a class="one-menu">
+        <a class="one-menu" href="#taskspace">
           Tasks
         </a>
         <a class="one-menu" href="#lastminutes">
