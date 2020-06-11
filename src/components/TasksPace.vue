@@ -20,14 +20,8 @@
                     <div class="tasks-points">
                       <div class="tasks-points-box">
                         <div class="tasks-points-line">
-                          <div class="tasks-points-item">
-                            <span>75%</span>
-                          </div>
-                          <div class="tasks-points-item">
-                            100%
-                          </div>
-                          <div class="tasks-points-item">
-                            100%
+                          <div class="tasks-points-item" v-for="(it, indd) in itm.points" :key="indd">
+                            <span :class="{ active: it.isSpan, opacity: it.isOpacity }">{{ it.name }}%</span>
                           </div>
                         </div>
                       </div>
@@ -155,11 +149,47 @@ export default {
         {
           name: 'Setup',
           list: [
-            { task: "Project set up" },
-            { task: "Project initiation" },
-            { task: "Planning" },
-            { task: "UX and UI" },
-            { task: "Project charter document" },
+            {
+              task: "Project set up",
+              points: [
+                { name: 82, isSpan: false, isOpacity: false }
+              ]
+            },
+            {
+              task: "Project initiation",
+              points: [
+                { name: 50, isSpan: true , isOpacity: false },
+                { name: 90, isSpan: true , isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+              ]
+            },
+            {
+              task: "Planning",
+              points: [
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 150, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 105, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "UX and UI",
+               points: [
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 150, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "Project charter document",
+              points: [
+                { name: 75, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: false }
+              ]
+            },
             { task: "Customer journey map" },
             { task: "Backend architecture document" },
             { task: "Development approach, life cycle selection" },
@@ -269,6 +299,11 @@ export default {
             { task: "Points system as  virtual currency" },
             { task: "In-app purchases" },
             { task: "Referral system" }
+          ],
+          points: [
+            { name: 50 },
+            { name: 90 },
+            { name: 100 }
           ]
         },
         {

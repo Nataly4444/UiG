@@ -75,12 +75,19 @@
 }
 
 .tasks-points-item span {
-    background: #FF9C65;
     border-radius: 22px;
     padding: 0 5px;
     height: 14px;
     display: flex;
     align-items: center;
+}
+
+.tasks-points-item span.active {
+    background: #FF9C65;
+}
+
+.tasks-points-item span.opacity {
+    color: rgba(255,255,255,.5)
 }
 
 .box-task {
