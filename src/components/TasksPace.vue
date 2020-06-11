@@ -135,10 +135,8 @@
 export default {
   data() {
     return {
-
       show: 1,
       tasks: [
-
         {
           name: 'Setup',
           list: [

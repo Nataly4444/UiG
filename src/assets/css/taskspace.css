@@ -10,7 +10,7 @@
 
 .tasks {
     width: 34%;
-    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
     z-index: 2;
 }
 
@@ -148,6 +148,8 @@
 .matrix-col.active .matrix-name span {
     background: #17B573;
     color: #fff;
+    border-radius: 6px;
+    padding: 2px 4px;
 }
 
 .matrix-item:first-child .matrix-col:first-child:before {
