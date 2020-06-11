@@ -10,6 +10,8 @@
 
 .tasks {
     width: 34%;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    z-index: 2;
 }
 
 .tasks-container-center {
@@ -81,6 +83,30 @@
     font-size: 15px;
     line-height: 32px;
     margin: 20px 0;
+    position: relative;
+}
+
+.one-task span {
+    position: relative;
+    z-index: 2;
+}
+
+.one-task:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #E7E7E7;
+    margin-left: -14.99%;
+    margin-right: -269.5%;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.one-task:hover:before {
+    opacity: .5;
 }
 
 .one-task:first-child {
@@ -89,11 +115,62 @@
 
 .matrix {
     width: 66%;
+    background: #F3F3F3;
+    display: flex;
 }
 
-.matrix img {
-    width: 100%;
-    display: block;
+.matrix-item {
+    flex: 1;
+    display: flex;
+    position: relative;
+}
+
+.matrix-col {
+    flex: 1;
+    position: relative;
+}
+
+.matrix-col:before {
+    content: "";
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #D9D9D9;
+}
+
+.matrix-col.active:before {
+    width: 2px;
+    background: #17B573;
+}
+
+.matrix-col.active .matrix-name span {
+    background: #17B573;
+    color: #fff;
+}
+
+.matrix-item:first-child .matrix-col:first-child:before {
+    background: none;
+}
+
+.matrix-name {
+    text-align: center;
+    height: 30px;
+    margin-top: -30px;
+    color: #A1A1A1;
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.matrix-year {
+    position: absolute;
+    top: -60px;
+    left: 0;
+    color: #A1A1A1;
+    font-size: 15px;
+    line-height: 30px;
+    height: 30px;
 }
 
 @media(max-width: 768px) {
