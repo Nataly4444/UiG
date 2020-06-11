@@ -67,6 +67,15 @@
     align-items: center;
 }
 
+.accordion-item-body-mini-container a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #33334B;
+    text-decoration: none;
+}
+
 .text-green {
     background: #17B573;
     border-radius: 2px;

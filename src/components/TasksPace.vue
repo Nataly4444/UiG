@@ -59,7 +59,7 @@ export default {
   data() {
     return {
       show: false,
-      show2: false,
+      show2: true,
       show3: false,
       setup: [
         { task: "Project set up" },
