@@ -55,7 +55,7 @@
                 <transition class="accordion-item-body">
                     <div v-if="show3" class="accordion-item-body-container">
                         <div class="accordion-item-body-mini-container">
-                            <p>Please review marketing analysis</p>
+                            <a href="https://docs.google.com/spreadsheets/d/1UezLeNOaZBageAKfvkM0FHf7tJHWXb6XZe2mKW_GahQ/edit#gid=1339606528">Please review marketing analysis</a>
                             <div class="text-green">Please send us your comments before 06.12.2020</div>
                         </div>
 
