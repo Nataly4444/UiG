@@ -17,6 +17,21 @@
                 <div v-if="(index + 1) == show" class="mini-block-with-tasks">
                   <div class="one-task" v-for="(itm, ind) in item.list" :key="ind">
                     <span>{{itm.task}}</span>
+                    <div class="tasks-points">
+                      <div class="tasks-points-box">
+                        <div class="tasks-points-line">
+                          <div class="tasks-points-item">
+                            <span>75%</span>
+                          </div>
+                          <div class="tasks-points-item">
+                            100%
+                          </div>
+                          <div class="tasks-points-item">
+                            100%
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </transition>

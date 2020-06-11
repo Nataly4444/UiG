@@ -24,18 +24,17 @@
             <p>Last updated: 3 hours ago</p>
           </div>
         </div>
-       
-           <div class="navigation2" v-else>
-              <a class="navigation-arrow prev" href>
-                <img class="prev-img" src="../assets/img/arrow.svg" alt />
-                <span>Prev</span>
-              </a>
-              <p class="data">June 5, 2020</p>
-              <a href class="navigation-arrow next">
-                <span>Next</span>
-                <img class="next-img" src="../assets/img/arrow.svg" alt />
-              </a>
-            </div>
+        <div class="navigation2" v-else>
+           <a class="navigation-arrow prev" href>
+             <img class="prev-img" src="../assets/img/arrow.svg" alt />
+             <span>Prev</span>
+           </a>
+           <p class="data">June 5, 2020</p>
+           <a href class="navigation-arrow next">
+             <span>Next</span>
+             <img class="next-img" src="../assets/img/arrow.svg" alt />
+           </a>
+        </div>
         
         <a href class="burger-menu" @click.prevent="isShow">
           <img src="../assets/img/burger.svg" v-if="show" alt />
