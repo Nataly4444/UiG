@@ -190,12 +190,43 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false }
               ]
             },
-            { task: "Customer journey map" },
-            { task: "Backend architecture document" },
-            { task: "Development approach, life cycle selection" },
-            { task: "Drafts for the payment system and virtual currency" },
-            { task: "Draft for Marketing: initial user acquisition document" },
-            { task: "Audit log" },
+            {
+              task: "Customer journey map",
+              points: [
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "Backend architecture document",
+              points: [
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "Development approach, life cycle selection",
+              points: [
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "Drafts for the payment system and virtual currency",
+              points: [
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+            },
+            {
+              task: "Draft for Marketing: initial user acquisition document",
+              points: [
+                { name: 98, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: false }
+              ]
+            },
+            {
+              task: "Audit log",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false },
+              ]
+            },
             { task: "API for creating tournaments" },
             {
               task:
