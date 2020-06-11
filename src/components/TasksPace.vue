@@ -84,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="matrix-item">
+          <div class="matrix-item active">
             <div class="matrix-year">
               June 2020
             </div>
@@ -109,7 +109,7 @@
               </div>
             </div>
           </div>
-          <div class="matrix-item">
+          <div class="matrix-item active">
             <div class="matrix-year">
               July 2020
             </div>

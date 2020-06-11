@@ -204,6 +204,11 @@
     background: none;
 }
 
+.matrix-item.active .matrix-name,
+.matrix-item.active .matrix-year {
+    color: #0B0B14;
+}
+
 .matrix-name {
     text-align: center;
     height: 30px;
