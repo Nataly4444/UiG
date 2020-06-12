@@ -303,7 +303,17 @@ export default {
         {
           name: 'Features for future releases',
           list: [
-            { task: "Authorization security options" },
+            {
+              task: "Authorization security options",
+              points: [
+                { name: 75, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: false }
+              ]
+            },
             { task: "Head-to-head tournaments" },
             { task: "Bracketed tournaments" },
             { task: "Paid tournaments" },
