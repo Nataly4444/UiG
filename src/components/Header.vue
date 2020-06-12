@@ -73,7 +73,8 @@ export default {
       !this.show ? this.show = true : this.show = false
     },
     slide() {
-      this.month = (this.month - 1) < 0 ? 0 : (this.month - 1)
+      this.month = (this.month - 1) < 3 ? 3 : (this.month - 1)
+      
       this.$emit('index', this.month)
     }
   },

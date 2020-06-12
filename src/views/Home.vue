@@ -4,7 +4,7 @@
     <SubHeader />
     <Summary />
     <ForReview />
-    <TasksPace :index="propIndex" />
+    <TasksPace :index="propIndex" :prefix="prefix" />
     <LastMinutes />
     <Documents />
 
@@ -44,12 +44,14 @@ export default {
   },
   data() {
     return {
-      propIndex: new Date().getMonth()
+      propIndex: new Date().getMonth(),
+      prefix: 0
     }
   },
   methods: {
     ind(e) {
       this.propIndex = e
+      this.prefix < 6 ? this.prefix += 3 : 6
     }
   }
 };
