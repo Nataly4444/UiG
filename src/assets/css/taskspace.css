@@ -87,7 +87,7 @@
 }
 
 .tasks-points-item span.opacity {
-    color: rgba(255,255,255,.5)
+    color: rgba(255, 255, 255, .5)
 }
 
 .box-task {
@@ -228,12 +228,27 @@
     height: 30px;
 }
 
+@media(max-width: 1080px) {
+    .tasks-title-2 {
+        margin-left: 20px;
+    }
+    .mini-block-with-tasks {
+        margin-left: 20px;
+    }
+}
+
 @media(max-width: 768px) {
     .tasks {
         width: 50%;
     }
     .matrix {
         width: 50%;
+    }
+    .tasks-title-2 {
+        margin-left: 10px;
+    }
+    .mini-block-with-tasks {
+        margin-left: 10px;
     }
 }
 
