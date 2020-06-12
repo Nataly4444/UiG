@@ -152,36 +152,32 @@ export default {
             {
               task: "Project set up",
               points: [
-                { name: 82, isSpan: false, isOpacity: false }
-              ]
-            },
-            {
-              task: "Project initiation",
-              points: [
                 { name: 50, isSpan: true , isOpacity: false },
                 { name: 90, isSpan: true , isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
               ]
             },
             {
-              task: "Planning",
-              points: [
+              task: "Project initiation",
+                 points: [
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 150, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 105, isSpan: false, isOpacity: true }
               ]
+             
+            },
+            {
+              task: "Planning",
+                points: [
+                { name: 100, isSpan: false, isOpacity: true },
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+           
             },
             {
               task: "UX and UI",
-               points: [
-                { name: 100, isSpan: false, isOpacity: true },
-                { name: 150, isSpan: false, isOpacity: true }
-              ]
-            },
-            {
-              task: "Project charter document",
-              points: [
+                points: [
                 { name: 75, isSpan: true, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: true },
@@ -189,12 +185,21 @@ export default {
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: false }
               ]
+             
+            },
+            {
+              task: "Project charter document",
+               points: [
+                { name: 100, isSpan: false, isOpacity: true }
+              ]
+            
             },
             {
               task: "Customer journey map",
-              points: [
+                points: [
                 { name: 100, isSpan: false, isOpacity: true }
               ]
+             
             },
             {
               task: "Backend architecture document",
@@ -210,94 +215,544 @@ export default {
             },
             {
               task: "Drafts for the payment system and virtual currency",
-              points: [
-                { name: 100, isSpan: false, isOpacity: true }
-              ]
-            },
-            {
-              task: "Draft for Marketing: initial user acquisition document",
-              points: [
+               points: [
                 { name: 98, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: false }
               ]
             },
             {
-              task: "Audit log",
+              task: "Draft for Marketing: initial user acquisition document",
               points: [
-                { name: 100, isSpan: false, isOpacity: false },
+                 { name: 100, isSpan: false, isOpacity: false },
+                { name: 0, isSpan: false, isOpacity: true }
               ]
             },
-            { task: "API for creating tournaments" },
             {
-              task:
-                "Additional fields in user profiles according to layouts - date of birth, options like “receive notifications” (backend)"
+              task: "Audit log",
+                points: [
+                { name: 90, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+               
+              ]  
             },
-            {
-              task:
-                "Bootstrapped frontend: integrated with Django, made authorization, demo profile and demo main"
+            { task: "API for creating tournaments",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+               
+              ]   },
+            {task: "Additional fields in user profiles according to layouts - date of birth, options like “receive notifications” (backend)",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  
             },
-            {
-              task:
-                "An environment for the front-end developers — deployment in one team, local backend with the latest edits and data, everything is being downloaded automatically"
+            {task: "Bootstrapped frontend: integrated with Django, made authorization, demo profile and demo main",
+                  points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  
             },
-            { task: "Player Profile, ver 1" },
-            { task: "Player History" },
-            { task: "Edit profile" },
-            { task: "Add country and birthdate" },
-            { task: "Authentification via Discord account" },
-            { task: "Linking profile to Discord account" },
-            { task: "List of player's tournaments" },
-            { task: "List of player's matches" },
-            { task: "List of player's teams" },
-            { task: "Player's settings" },
-            { task: "Team profile, ver 1" },
-            { task: "Team History" },
-            { task: "Invitation to Join team" },
-            { task: "Join team" },
-            { task: "Edit team" },
-            { task: "Delete team" },
-            { task: "Team preferences: games" },
-            { task: "Invitation to the tournament sent by the team" },
-            { task: "Game List" },
-            { task: "Games list view (grid, carousel, list)" },
-            { task: "Game Detail" },
-            { task: "Tournament Detail" },
-            { task: "Create tournament (advanced settings)" },
-            { task: "Match detail" },
-            { task: "Tournament Admin role" },
-            { task: "Tournament Leaderboard" },
-            { task: "User verification for the tournament" },
-            { task: "Edit Leaderboard" },
-            { task: "Matches Schedule" },
-            { task: "Edit matches schedule" },
-            {
-              task:
-                "Add stream to the tournament set up max nimber of the tournament participants"
-            },
-            { task: "Finish tournament" },
-            { task: "List of matches in the tournament" },
-            { task: "List of tournament participants" },
-            { task: "List of teams taking part in the tournament" },
-            { task: "Tournament rules" },
-            { task: "Tournaments requests" },
-            { task: "Payment Processing" },
-            { task: "Match Self Reporting" },
-            { task: "Match score submitting and calculation" },
-            { task: "Match Dispute" },
-            { task: "Payment Transactions" },
-            { task: "Super Admin Dashboard" },
-            { task: "Game supported" },
-            { task: "Email notifications" },
-            { task: "Community building" },
-            { task: "Mobile development (iOS)" },
-            { task: "Mobile development (Android)" },
-            { task: "Security / Stability / Maintenance" },
-            { task: "API creation for gathering data from gamers platforms" },
-            { task: "When the platform is in operation" },
-            { task: "Online Events" },
-            { task: "Offline Events" },
-            { task: "Fair play" },
-            { task: "Trainings" }
+            {task:"An environment for the front-end developers — deployment in one team, local backend with the latest edits and data, everything is being downloaded automatically",
+                points: [
+                { name: 100, isSpan: false, isOpacity: false }
+               
+              ]   },
+            { task: "Player Profile, ver 1",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+               
+              ]    },
+            { task: "Player History",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+               
+              ]    },
+            { task: "Edit profile",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Add country and birthdate",
+             points: [
+               
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Authentification via Discord account",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false } //отдельно
+               
+              ]   },
+            { task: "Linking profile to Discord account",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false } //отдельно
+               
+              ]    },
+            { task: "List of player's tournaments",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false }, //отдельно
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "List of player's matches",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false }, //отдельно
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "List of player's teams",
+              points: [
+                { name: 100, isSpan: false, isOpacity: false }, //отдельно
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Player's settings",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Team profile, ver 1",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Team History",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Invitation to Join team",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]    },
+            { task: "Join team",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Edit team",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Delete team",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Team preferences: games",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Invitation to the tournament sent by the team",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Game List",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Games list view (grid, carousel, list)",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]   },
+            { task: "Game Detail",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Tournament Detail",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Create tournament (advanced settings)",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Match detail",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Tournament Admin role",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Tournament Leaderboard",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "User verification for the tournament",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Edit Leaderboard",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Matches Schedule",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Edit matches schedule",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            {task: "Add stream to the tournament",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]},
+            {task: "Set up max nimber of the tournament participants",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]},
+            { task: "Finish tournament",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "List of matches in the tournament",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "List of tournament participants",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "List of teams taking part in the tournament",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Tournament rules",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Tournaments requests",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]
+             },
+            { task: "Payment Processing",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Match Self Reporting",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Match score submitting and calculation",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Match Dispute",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Payment Transactions",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Super Admin Dashboard",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Game supported",
+            points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Email notifications",
+            points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Community building",
+              points: [
+                { name: 50, isSpan: true, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Mobile development (iOS)",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Mobile development (Android)",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Security / Stability / Maintenance",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "API creation for gathering data from gamers platforms",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "When the platform is in operation",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Online Events",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Offline Events",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Fair play",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Trainings",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  }
           ]
         },
         {
@@ -305,41 +760,198 @@ export default {
           list: [
             {
               task: "Authorization security options",
-              points: [
-                { name: 75, isSpan: true, isOpacity: false },
-                { name: 100, isSpan: false, isOpacity: true },
-                { name: 100, isSpan: false, isOpacity: true },
-                { name: 100, isSpan: false, isOpacity: true },
-                { name: 100, isSpan: false, isOpacity: true },
-                { name: 100, isSpan: false, isOpacity: false }
-              ]
+            
             },
-            { task: "Head-to-head tournaments" },
-            { task: "Bracketed tournaments" },
-            { task: "Paid tournaments" },
+            { task: "Head-to-head tournaments",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Bracketed tournaments",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Paid tournaments",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
             { task: "Prizes section at the tournament page" },
-            { task: "Age requirements logic" },
-            { task: "Admin panel with the White Label features" },
-            { task: "White label for the platform" },
-            { task: "White label for the tournament" },
-            { task: "White label of the features availability" },
-            { task: "White label landings" },
-            { task: "White label promotion" },
+            { task: "Age requirements logic",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Admin panel with the White Label features",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "White label for the platform",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "White label for the tournament",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "White label of the features availability",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "White label landings",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "White label promotion",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
             { task: "Player's stats" },
             { task: "Teams ranks" },
-            { task: "Personalization" },
-            { task: "User's preferences settings tab in the user profile" },
-            { task: "Suggestions for the user on how to move up" },
-            { task: "Game supported" },
-            { task: "Integration" },
-            { task: "Tournaments matching" },
-            { task: "Team matching" },
-            { task: "Gamification" },
+            { task: "Personalization",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "User's preferences settings tab in the user profile" ,
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Suggestions for the user on how to move up",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Game supported",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Integration",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Tournaments matching",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
+            { task: "Team matching",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Gamification",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ] },
             { task: "Game bets" },
             { task: "AI engine" },
-            { task: "Points system as  virtual currency" },
-            { task: "In-app purchases" },
-            { task: "Referral system" }
+            { task: "Points system as  virtual currency",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "In-app purchases",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Referral system",
+               points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  }
           ],
           points: [
             { name: 50 },
@@ -350,32 +962,297 @@ export default {
         {
           name: 'Documentation',
           list: [
-            { task: "Project charter" },
-            { task: "Detailed plan" },
-            { task: "Budget" },
-            { task: "Competitors research" },
-            { task: "User flow" },
-            { task: "Virtual currency overview" },
-            { task: "Payment systems and integrations" },
-            { task: "Marketing: initial user acquisition" },
-            { task: "White Label options and overview" },
-            { task: "Virtual Currency research" },
-            { task: "Research on competitors features" },
-            { task: "Marketing plan" },
-            { task: "Marketing strategy" },
-            { task: "Market and competitors research" },
-            { task: "Demographic research" },
-            { task: "Traffic report" },
-            { task: "Promo budget" },
-            { task: "Promo strategy" },
-            { task: "Marketing activities reports" },
-            { task: "Video production plan" },
-            { task: "Videos scenarios" },
-            { task: "SEO plan" },
-            { task: "Keywords list" },
-            { task: "Semantic core" },
-            { task: "Touchpoint map" },
-            { task: "Copyright content" }
+            { task: "Project charter",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ] },
+            { task: "Detailed plan",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Budget",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Competitors research",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "User flow",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Virtual currency overview",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Payment systems and integrations",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Marketing: initial user acquisition",
+             points: [
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "White Label options and overview",
+            points: [
+                { name: 30, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+              ] },
+            { task: "Virtual Currency research",
+             points: [
+                { name: 40, isSpan: true, isOpacity: false },
+                { name: 50, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+              ] },
+            { task: "Research on competitors features",
+             points: [
+                { name: 50, isSpan: true, isOpacity: false },
+                { name: 100, isSpan: false, isOpacity: false }
+              ]  },
+            { task: "Marketing plan",
+             points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Marketing strategy",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Market and competitors research",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Demographic research",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Traffic report",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Promo budget",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Promo strategy",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Marketing activities reports",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Video production plan",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Videos scenarios",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "SEO plan",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Keywords list",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Semantic core",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Touchpoint map",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  },
+            { task: "Copyright content",
+              points: [
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true },
+                { name: 0, isSpan: false, isOpacity: true }
+              ]  }
           ]
         }
       ]
