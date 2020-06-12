@@ -923,7 +923,8 @@ export default {
           name: "Features for future releases",
           list: [
             {
-              task: "Authorization security options"
+              task: "Authorization security options",
+              points: []
             },
             {
               task: "Head-to-head tournaments",
@@ -961,7 +962,10 @@ export default {
               ],
               week: 19
             },
-            { task: "Prizes section at the tournament page" },
+            {
+              task: "Prizes section at the tournament page",
+              points: []
+            },
             {
               task: "Age requirements logic",
               points: [
@@ -1044,8 +1048,8 @@ export default {
               ],
               week: 19
             },
-            { task: "Player's stats" },
-            { task: "Teams ranks" },
+            { task: "Player's stats", points: [] },
+            { task: "Teams ranks", points: [] },
             {
               task: "Personalization",
               points: [
@@ -1134,8 +1138,8 @@ export default {
               ],
               week: 25
             },
-            { task: "Game bets" },
-            { task: "AI engine" },
+            { task: "Game bets", points: [] },
+            { task: "AI engine", points: [] },
             {
               task: "Points system as  virtual currency",
               points: [

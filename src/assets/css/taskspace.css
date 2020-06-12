@@ -48,15 +48,20 @@
     left: calc(100% + 14.99%);
     bottom: 0;
     width: 255%;
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    overflow: hidden;
 }
 
 .tasks-points-box {
-    background: rgba(50, 130, 250, .5);
+    /* background: rgba(50, 130, 250, .5); */
     border-radius: 22px;
     margin-left: 0;
     display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
 }
 
 .tasks-points-line {
