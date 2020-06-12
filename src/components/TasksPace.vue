@@ -21,19 +21,22 @@
                   <div class="one-task" v-for="(itm, ind) in item.list" :key="ind">
                     <span>{{itm.task}}</span>
                     <div class="tasks-points">
-                      <div class="tasks-points-box" :style="{
-                        marginLeft: `${n * itm.week}%`,
+                      <div
+                        class="tasks-points-box"
+                        :style="{
+                        marginLeft: `${(n * itm.week) + .1}%`,
                         width: `${(n * itm.points.length) + .35}%`
-                      }">
+                      }"
+                      >
                         <div class="tasks-points-line">
                           <div
                             class="tasks-points-item"
                             v-for="(it, indd) in itm.points"
                             :key="indd"
                           >
-                            <span :class="{ active: it.isSpan, opacity: it.isOpacity }">
-                              {{ it.name }}%
-                            </span>
+                            <span
+                              :class="{ active: it.isSpan, opacity: it.isOpacity }"
+                            >{{ it.name }}%</span>
                           </div>
                         </div>
                       </div>
@@ -46,77 +49,8 @@
         </div>
 
         <div class="matrix">
-          <div class="matrix-item">
-            <div class="matrix-year">April 2020</div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w1</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w2</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w3</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w4</span>
-              </div>
-            </div>
-          </div>
-          <div class="matrix-item">
-            <div class="matrix-year">May 2020</div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w1</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w2</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w3</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w4</span>
-              </div>
-            </div>
-          </div>
-          <div class="matrix-item active">
-            <div class="matrix-year">June 2020</div>
-            <div class="matrix-col active">
-              <div class="matrix-name">
-                <span>w1</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w2</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w3</span>
-              </div>
-            </div>
-            <div class="matrix-col">
-              <div class="matrix-name">
-                <span>w4</span>
-              </div>
-            </div>
-          </div>
-          <div class="matrix-item active">
-            <div class="matrix-year">July 2020</div>
+          <div class="matrix-item" v-for="(item, index) in calend" :key="index" :class="{active: index > 1}">
+            <div class="matrix-year">{{ item }} 2020</div>
             <div class="matrix-col">
               <div class="matrix-name">
                 <span>w1</span>
@@ -195,7 +129,7 @@ export default {
             {
               task: "Project charter document",
               points: [{ name: 100, isSpan: false, isOpacity: true }],
-               week: 5
+              week: 5
             },
             {
               task: "Customer journey map",
@@ -1211,17 +1145,17 @@ export default {
             {
               task: "User flow",
               points: [{ name: 100, isSpan: false, isOpacity: false }],
-               week: 3
+              week: 3
             },
             {
               task: "Virtual currency overview",
               points: [{ name: 100, isSpan: false, isOpacity: false }],
-               week: 4
+              week: 4
             },
             {
               task: "Payment systems and integrations",
               points: [{ name: 100, isSpan: false, isOpacity: false }],
-               week: 4
+              week: 4
             },
             {
               task: "Marketing: initial user acquisition",
@@ -1236,7 +1170,7 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
               ],
-               week: 4
+              week: 4
             },
             {
               task: "Virtual Currency research",
@@ -1246,7 +1180,7 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
               ],
-               week: 4
+              week: 4
             },
             {
               task: "Research on competitors features",
@@ -1539,14 +1473,40 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
               ],
-               week: 8
-
+              week: 8
             }
           ]
         }
       ],
-      n: ""
+      n: "",
+      calendar: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+      isMonth: 0,
+      isIndex: 1
     };
+  },
+  props: {
+    index: Number
+  },
+  computed: {
+    calend() {
+    // eslint-disable-next-line vue/no-side-effects-in-computed-properties
+      this.isMonth = this.index + 1;
+
+      return this.calendar.slice((this.isMonth - 4) < 0 ? 0 : this.isMonth - 4, this.isMonth)
+    }
   },
   mounted() {
     // eslint-disable-next-line no-unused-vars

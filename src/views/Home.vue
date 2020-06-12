@@ -1,10 +1,10 @@
 <template>
   <div class="main-background">
-    <Header />
+    <Header v-on:index='ind' />
     <SubHeader />
     <Summary />
     <ForReview />
-    <TasksPace />
+    <TasksPace :index="propIndex" />
     <LastMinutes />
     <Documents />
 
@@ -31,7 +31,6 @@ import Notes from "@/components/Notes.vue";
 
 export default {
   name: "Home",
-
   components: {
     Header,
     SubHeader,
@@ -43,5 +42,15 @@ export default {
     Documents,
     Notes,
   },
+  data() {
+    return {
+      propIndex: new Date().getMonth()
+    }
+  },
+  methods: {
+    ind(e) {
+      this.propIndex = e
+    }
+  }
 };
 </script>
