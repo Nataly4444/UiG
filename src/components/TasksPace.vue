@@ -19,7 +19,7 @@
               <transition name="fade">
                 <div v-if="(index + 1) == show" class="mini-block-with-tasks">
                   <div class="one-task" v-for="(itm, ind) in item.list" :key="ind">
-                    <span>{{itm.task}} {{ n * 3 / 1 }}</span>
+                    <span>{{itm.task}}</span>
                     <div class="tasks-points">
                       <div class="tasks-points-box" :style="{
                         marginLeft: `${n * itm.week}%`,
@@ -160,7 +160,7 @@ export default {
                 { name: 90, isSpan: true, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
               ],
-              week: 1
+              week: 2
             },
             {
               task: "Project initiation",
@@ -170,7 +170,7 @@ export default {
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 105, isSpan: false, isOpacity: true }
               ],
-              week: 2
+              week: 3
             },
             {
               task: "Planning",
@@ -190,37 +190,43 @@ export default {
                 { name: 100, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: false }
               ],
-              week: 9
+              week: 3
             },
             {
               task: "Project charter document",
-              points: [{ name: 100, isSpan: false, isOpacity: true }]
+              points: [{ name: 100, isSpan: false, isOpacity: true }],
+               week: 5
             },
             {
               task: "Customer journey map",
-              points: [{ name: 100, isSpan: false, isOpacity: true }]
+              points: [{ name: 100, isSpan: false, isOpacity: true }],
+              week: 5
             },
             {
               task: "Backend architecture document",
-              points: [{ name: 100, isSpan: false, isOpacity: true }]
+              points: [{ name: 100, isSpan: false, isOpacity: true }],
+              week: 5
             },
             {
               task: "Development approach, life cycle selection",
-              points: [{ name: 100, isSpan: false, isOpacity: true }]
+              points: [{ name: 100, isSpan: false, isOpacity: true }],
+              week: 5
             },
             {
               task: "Drafts for the payment system and virtual currency",
               points: [
                 { name: 98, isSpan: false, isOpacity: true },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+              week: 5
             },
             {
               task: "Draft for Marketing: initial user acquisition document",
               points: [
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Audit log",
@@ -231,7 +237,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 6
             },
             {
               task: "API for creating tournaments",
@@ -240,22 +247,26 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+              week: 5
             },
             {
               task:
                 "Additional fields in user profiles according to layouts - date of birth, options like “receive notifications” (backend)",
-              points: [{ name: 0, isSpan: false, isOpacity: true }]
+              points: [{ name: 0, isSpan: false, isOpacity: true }],
+              week: 0
             },
             {
               task:
                 "Bootstrapped frontend: integrated with Django, made authorization, demo profile and demo main",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 6
             },
             {
               task:
                 "An environment for the front-end developers — deployment in one team, local backend with the latest edits and data, everything is being downloaded automatically",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 4
             },
             {
               task: "Player Profile, ver 1",
@@ -263,7 +274,8 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+              week: 5
             },
             {
               task: "Player History",
@@ -271,7 +283,8 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+              week: 5
             },
             {
               task: "Edit profile",
@@ -282,26 +295,30 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Add country and birthdate",
               points: [
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 9
             },
             {
               task: "Authentification via Discord account",
               points: [
                 { name: 100, isSpan: false, isOpacity: false } //отдельно
-              ]
+              ],
+              week: 8
             },
             {
               task: "Linking profile to Discord account",
               points: [
                 { name: 100, isSpan: false, isOpacity: false } //отдельно
-              ]
+              ],
+              week: 8
             },
             {
               task: "List of player's tournaments",
@@ -312,7 +329,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "List of player's matches",
@@ -323,7 +341,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "List of player's teams",
@@ -332,7 +351,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Player's settings",
@@ -340,7 +360,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "Team profile, ver 1",
@@ -353,7 +374,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 11
             },
             {
               task: "Team History",
@@ -366,7 +388,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 11
             },
             {
               task: "Invitation to Join team",
@@ -376,7 +399,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 14
             },
             {
               task: "Join team",
@@ -386,7 +410,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 14
             },
             {
               task: "Edit team",
@@ -395,25 +420,29 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 16
             },
             {
               task: "Delete team",
               points: [
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 20
             },
             {
               task: "Team preferences: games",
               points: [
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 20
             },
             {
               task: "Invitation to the tournament sent by the team",
-              points: [{ name: 0, isSpan: false, isOpacity: true }]
+              points: [{ name: 0, isSpan: false, isOpacity: true }],
+              week: 21
             },
             {
               task: "Game List",
@@ -428,7 +457,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 14
             },
             {
               task: "Games list view (grid, carousel, list)",
@@ -436,7 +466,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 21
             },
             {
               task: "Game Detail",
@@ -451,7 +482,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 14
             },
             {
               task: "Tournament Detail",
@@ -465,7 +497,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 6
             },
             {
               task: "Create tournament (advanced settings)",
@@ -476,7 +509,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 15
             },
             {
               task: "Match detail",
@@ -487,7 +521,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 10
             },
             {
               task: "Tournament Admin role",
@@ -497,7 +532,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "Tournament Leaderboard",
@@ -506,14 +542,16 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "User verification for the tournament",
               points: [
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 22
             },
             {
               task: "Edit Leaderboard",
@@ -521,7 +559,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 18
             },
             {
               task: "Matches Schedule",
@@ -529,7 +568,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Edit matches schedule",
@@ -537,7 +577,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Add stream to the tournament",
@@ -548,7 +589,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "Set up max nimber of the tournament participants",
@@ -556,7 +598,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "Finish tournament",
@@ -565,7 +608,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "List of matches in the tournament",
@@ -576,7 +620,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 9
             },
             {
               task: "List of tournament participants",
@@ -585,7 +630,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "List of teams taking part in the tournament",
@@ -594,18 +640,21 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Tournament rules",
-              points: [{ name: 0, isSpan: false, isOpacity: true }]
+              points: [{ name: 0, isSpan: false, isOpacity: true }],
+              week: 20
             },
             {
               task: "Tournaments requests",
               points: [
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 20
             },
             {
               task: "Payment Processing",
@@ -620,7 +669,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 15
             },
             {
               task: "Match Self Reporting",
@@ -631,7 +681,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 10
             },
             {
               task: "Match score submitting and calculation",
@@ -643,7 +694,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 10
             },
             {
               task: "Match Dispute",
@@ -654,7 +706,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 17
             },
             {
               task: "Payment Transactions",
@@ -669,7 +722,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 15
             },
             {
               task: "Super Admin Dashboard",
@@ -680,7 +734,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 9
             },
             {
               task: "Game supported",
@@ -691,7 +746,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 9
             },
             {
               task: "Email notifications",
@@ -699,7 +755,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 20
             },
             {
               task: "Community building",
@@ -729,7 +786,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Mobile development (iOS)",
@@ -743,7 +801,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 21
             },
             {
               task: "Mobile development (Android)",
@@ -756,7 +815,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 21
             },
             {
               task: "Security / Stability / Maintenance",
@@ -771,7 +831,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 23
             },
             {
               task: "API creation for gathering data from gamers platforms",
@@ -784,7 +845,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "When the platform is in operation",
@@ -798,7 +860,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 24
             },
             {
               task: "Online Events",
@@ -812,7 +875,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 24
             },
             {
               task: "Offline Events",
@@ -826,7 +890,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 24
             },
             {
               task: "Fair play",
@@ -835,7 +900,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Trainings",
@@ -848,7 +914,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             }
           ]
         },
@@ -867,7 +934,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Bracketed tournaments",
@@ -878,7 +946,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Paid tournaments",
@@ -889,7 +958,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             { task: "Prizes section at the tournament page" },
             {
@@ -899,7 +969,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Admin panel with the White Label features",
@@ -910,7 +981,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "White label for the platform",
@@ -921,7 +993,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "White label for the tournament",
@@ -932,7 +1005,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "White label of the features availability",
@@ -943,7 +1017,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "White label landings",
@@ -954,7 +1029,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "White label promotion",
@@ -965,7 +1041,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             { task: "Player's stats" },
             { task: "Teams ranks" },
@@ -978,7 +1055,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "User's preferences settings tab in the user profile",
@@ -987,7 +1065,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Suggestions for the user on how to move up",
@@ -996,7 +1075,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Game supported",
@@ -1009,7 +1089,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Integration",
@@ -1020,7 +1101,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 19
             },
             {
               task: "Tournaments matching",
@@ -1029,7 +1111,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Team matching",
@@ -1038,7 +1121,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Gamification",
@@ -1047,7 +1131,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             { task: "Game bets" },
             { task: "AI engine" },
@@ -1062,7 +1147,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "In-app purchases",
@@ -1075,7 +1161,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             },
             {
               task: "Referral system",
@@ -1088,7 +1175,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 25
             }
           ],
           points: [{ name: 50 }, { name: 90 }, { name: 100 }]
@@ -1098,35 +1186,43 @@ export default {
           list: [
             {
               task: "Project charter",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 2
             },
             {
               task: "Detailed plan",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 2
             },
             {
               task: "Budget",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 2
             },
             {
               task: "Competitors research",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 2
             },
             {
               task: "User flow",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+               week: 3
             },
             {
               task: "Virtual currency overview",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+               week: 4
             },
             {
               task: "Payment systems and integrations",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+               week: 4
             },
             {
               task: "Marketing: initial user acquisition",
-              points: [{ name: 100, isSpan: false, isOpacity: false }]
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
+              week: 4
             },
             {
               task: "White Label options and overview",
@@ -1135,7 +1231,8 @@ export default {
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+               week: 4
             },
             {
               task: "Virtual Currency research",
@@ -1144,14 +1241,16 @@ export default {
                 { name: 50, isSpan: true, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+               week: 4
             },
             {
               task: "Research on competitors features",
               points: [
                 { name: 50, isSpan: true, isOpacity: false },
                 { name: 100, isSpan: false, isOpacity: false }
-              ]
+              ],
+              week: 7
             },
             {
               task: "Marketing plan",
@@ -1169,7 +1268,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Marketing strategy",
@@ -1187,7 +1287,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Market and competitors research",
@@ -1205,7 +1306,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Demographic research",
@@ -1223,7 +1325,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Traffic report",
@@ -1241,7 +1344,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Promo budget",
@@ -1259,7 +1363,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Promo strategy",
@@ -1277,7 +1382,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Marketing activities reports",
@@ -1295,7 +1401,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Video production plan",
@@ -1313,7 +1420,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Videos scenarios",
@@ -1331,7 +1439,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "SEO plan",
@@ -1349,7 +1458,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Keywords list",
@@ -1367,7 +1477,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Semantic core",
@@ -1385,7 +1496,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Touchpoint map",
@@ -1403,7 +1515,8 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+              week: 8
             },
             {
               task: "Copyright content",
@@ -1421,7 +1534,9 @@ export default {
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true },
                 { name: 0, isSpan: false, isOpacity: true }
-              ]
+              ],
+               week: 8
+
             }
           ]
         }
