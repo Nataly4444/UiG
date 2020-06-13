@@ -50,7 +50,7 @@
 
         <div class="matrix">
           <div class="matrix-item" v-for="(item, index) in calend" :key="index" :class="{active: index > 1}">
-            <div class="matrix-year">{{ item.name }} 2020</div>
+            <div class="matrix-year">{{ item.name }} {{ year }}</div>
             <div class="matrix-col" :class="{ active: isDays < 7 && item.index == isM }">
               <div class="matrix-name">
                 <span>w1</span>
@@ -1496,7 +1496,8 @@ export default {
       isMonth: 0,
       isIndex: 1,
       isDays: new Date().getUTCDate(),
-      isM: new Date().getMonth()
+      isM: new Date().getMonth(),
+      year: new Date().getFullYear()
     };
   },
   props: {

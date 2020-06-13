@@ -9,12 +9,12 @@
             </div>
             <div class="gradient"></div>
             <div class="navigation" >
-              <a class="navigation-arrow prev" href v-on:click.prevent="slide">
+              <a class="navigation-arrow prev" href v-on:click.prevent="slide" v-if="month != 3">
                 <img class="prev-img" src="../assets/img/arrow.svg" alt />
                 <span>Prev</span>
               </a>
-              <p class="data">{{ calendar[month] }} {{ day }}, 2020</p>
-              <a href class="navigation-arrow next" v-on:click.prevent="slides">
+              <p class="data">{{ calendar[month] }} {{ day }}, {{ year }}</p>
+              <a href class="navigation-arrow next" v-on:click.prevent="slides" v-if="month != 11">
                 <span>Next</span>
                 <img class="next-img" src="../assets/img/arrow.svg" alt />
               </a>
@@ -25,12 +25,12 @@
           </div>
         </div>
         <div class="navigation2" v-else>
-          <a class="navigation-arrow prev" href v-on:click.prevent="slide">
+          <a class="navigation-arrow prev" href v-on:click.prevent="slide" v-if="month != 3">
             <img class="prev-img" src="../assets/img/arrow.svg" alt />
             <span>Prev</span>
           </a>
           <p class="data">{{ calendar[month] }} {{ day }}, 2020</p>
-          <a href class="navigation-arrow next" v-on:click.prevent="slides">
+          <a href class="navigation-arrow next" v-on:click.prevent="slides" v-if="month != 11">
             <span>Next</span>
             <img class="next-img" src="../assets/img/arrow.svg" alt />
           </a>
@@ -64,8 +64,9 @@ export default {
         "November",
         "December"
       ],
-      month: null,
-      day: 0
+      month: new Date().getMonth(),
+      day: new Date().getUTCDate(),
+      year: new Date().getFullYear()
     };
   },
   methods: {
@@ -82,14 +83,6 @@ export default {
       
       this.$emit('index', this.month)
     }
-  },
-  mounted() {
-    const d = new Date();
-    // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-
-    // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-    this.month = d.getMonth();
-    this.day   = d.getUTCDate();
   }
 };
 </script>
