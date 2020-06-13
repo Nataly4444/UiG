@@ -1501,13 +1501,13 @@ export default {
     };
   },
   props: {
-    index: Number,
+    index: Object,
     prefix: Number
   },
   computed: {
     calend() {
-    // eslint-disable-next-line vue/no-side-effects-in-computed-properties
-      this.isMonth = this.index + 1;
+      // eslint-disable-next-line vue/no-side-effects-in-computed-properties
+      this.isMonth = this.index.prev + 1;
 
       return this.calendar.slice((this.isMonth - 4) < 0 ? 0 : this.isMonth - 4, this.isMonth)
     }
