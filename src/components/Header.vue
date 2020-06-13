@@ -14,7 +14,7 @@
                 <span>Prev</span>
               </a>
               <p class="data">{{ calendar[month] }} {{ day }}, 2020</p>
-              <a href class="navigation-arrow next">
+              <a href class="navigation-arrow next" v-on:click.prevent="slides">
                 <span>Next</span>
                 <img class="next-img" src="../assets/img/arrow.svg" alt />
               </a>
@@ -25,15 +25,15 @@
           </div>
         </div>
         <div class="navigation2" v-else>
-           <a class="navigation-arrow prev" href v-on:click.prevent="slide">
-              <img class="prev-img" src="../assets/img/arrow.svg" alt />
-              <span>Prev</span>
-            </a>
-            <p class="data">{{ calendar[month] }} {{ day }}, 2020</p>
-           <a href class="navigation-arrow next">
-             <span>Next</span>
-             <img class="next-img" src="../assets/img/arrow.svg" alt />
-           </a>
+          <a class="navigation-arrow prev" href v-on:click.prevent="slide">
+            <img class="prev-img" src="../assets/img/arrow.svg" alt />
+            <span>Prev</span>
+          </a>
+          <p class="data">{{ calendar[month] }} {{ day }}, 2020</p>
+          <a href class="navigation-arrow next" v-on:click.prevent="slides">
+            <span>Next</span>
+            <img class="next-img" src="../assets/img/arrow.svg" alt />
+          </a>
         </div>
         
         <a href class="burger-menu" @click.prevent="isShow">
@@ -74,6 +74,11 @@ export default {
     },
     slide() {
       this.month = (this.month - 1) < 3 ? 3 : (this.month - 1)
+      
+      this.$emit('index', this.month)
+    },
+    slides() {
+      this.month = this.month > 10 ? 11 : (this.month + 1)
       
       this.$emit('index', this.month)
     }

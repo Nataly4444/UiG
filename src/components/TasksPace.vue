@@ -50,23 +50,23 @@
 
         <div class="matrix">
           <div class="matrix-item" v-for="(item, index) in calend" :key="index" :class="{active: index > 1}">
-            <div class="matrix-year">{{ item }} 2020 {{ isMonth }}</div>
-            <div class="matrix-col">
+            <div class="matrix-year">{{ item.name }} 2020</div>
+            <div class="matrix-col" :class="{ active: isDays < 7 && item.index == isM }">
               <div class="matrix-name">
                 <span>w1</span>
               </div>
             </div>
-            <div class="matrix-col">
+            <div class="matrix-col" :class="{ active: isDays > 7 && isDays < 14 && item.index == isM }">
               <div class="matrix-name">
                 <span>w2</span>
               </div>
             </div>
-            <div class="matrix-col">
+            <div class="matrix-col" :class="{ active: isDays > 14 && isDays < 21 && item.index == isM }">
               <div class="matrix-name">
                 <span>w3</span>
               </div>
             </div>
-            <div class="matrix-col">
+            <div class="matrix-col" :class="{ active: isDays > 21 && isDays < 31 && item.index == isM }">
               <div class="matrix-name">
                 <span>w4</span>
               </div>
@@ -1480,21 +1480,23 @@ export default {
       ],
       n: "",
       calendar: [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December"
+        { name: 'January', index: 0 },
+        { name: 'February', index: 1 },
+        { name: 'March', index: 2 },
+        { name: 'April', index: 3 },
+        { name: 'May', index: 4 },
+        { name: 'June', index: 5 },
+        { name: 'July', index: 6 },
+        { name: 'August', index: 7 },
+        { name: 'September', index: 8 },
+        { name: 'October', index: 9 },
+        { name: 'November', index: 10 },
+        { name: 'December', index: 11 }
       ],
       isMonth: 0,
       isIndex: 1,
+      isDays: new Date().getUTCDate(),
+      isM: new Date().getMonth()
     };
   },
   props: {
