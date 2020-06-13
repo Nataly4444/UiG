@@ -61,7 +61,7 @@
                 <span>w2</span>
               </div>
             </div>
-            <div class="matrix-col" :class="{ active: isDays > 14 && isDays < 21 && item.index == isM }">
+            <div class="matrix-col"  :class="{ active: isDays > 14 && isDays < 21 && item.index == isM }">
               <div class="matrix-name">
                 <span>w3</span>
               </div>
@@ -243,14 +243,14 @@ export default {
             {
               task: "Authentification via Discord account",
               points: [
-                { name: 100, isSpan: false, isOpacity: false } //отдельно
+                { name: 100, isSpan: false, isOpacity: false } 
               ],
               week: 8
             },
             {
               task: "Linking profile to Discord account",
               points: [
-                { name: 100, isSpan: false, isOpacity: false } //отдельно
+                { name: 100, isSpan: false, isOpacity: false } 
               ],
               week: 8
             },

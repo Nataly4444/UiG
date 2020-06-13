@@ -245,14 +245,20 @@
     .mini-block-with-tasks {
         margin-left: 20px;
     }
+    .tasks-points-box {
+        width: auto !important;
+    }
 }
 
 @media(max-width: 768px) {
     .tasks {
-        width: 50%;
+        width: 35%;
     }
     .matrix {
-        width: 50%;
+        width: 65%;
+    }
+    .tasks-points-box {
+        width: auto !important;
     }
     .tasks-title-2 {
         margin-left: 10px;

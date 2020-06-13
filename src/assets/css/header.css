@@ -133,6 +133,12 @@
     display: none;
 }
 
+@media(max-width: 1160px) {
+    .header-logo {
+        width: 25%;
+    }
+}
+
 @media(max-width: 768px) {
     .mini-header-container {
         width: 88.3%;

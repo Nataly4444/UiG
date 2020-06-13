@@ -75,12 +75,10 @@ export default {
     },
     slide() {
       this.month = (this.month - 1) < 3 ? 3 : (this.month - 1)
-      
       this.$emit('index', { prev: this.month, p: 1, n: 0 })
     },
     slides() {
       this.month = this.month > 10 ? 11 : (this.month + 1)
-      
       this.$emit('index', { prev: this.month, p: 0, n: 1 })
     }
   }
