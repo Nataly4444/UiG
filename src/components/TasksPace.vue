@@ -56,17 +56,17 @@
                 <span>w1</span>
               </div>
             </div>
-            <div class="matrix-col" :class="{ active: isDays > 7 && isDays < 14 && item.index == isM }">
+            <div class="matrix-col" :class="{ active: isDays > 7 && isDays <= 14 && item.index == isM }">
               <div class="matrix-name">
                 <span>w2</span>
               </div>
             </div>
-            <div class="matrix-col"  :class="{ active: isDays > 14 && isDays < 21 && item.index == isM }">
+            <div class="matrix-col"  :class="{ active: isDays > 15 && isDays <= 21 && item.index == isM }">
               <div class="matrix-name">
                 <span>w3</span>
               </div>
             </div>
-            <div class="matrix-col" :class="{ active: isDays > 21 && isDays < 31 && item.index == isM }">
+            <div class="matrix-col" :class="{ active: isDays > 21 && isDays <= 31 && item.index == isM }">
               <div class="matrix-name">
                 <span>w4</span>
               </div>
