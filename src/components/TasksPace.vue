@@ -8,7 +8,20 @@
       <div class="tasks-container">
         <div class="tasks">
           <div class="tasks-container-center">
-            <div class="tasks-title">Use of Funds</div>
+            <div class="tasks-title">
+              <div>Use of Funds</div>
+              <div class="hh">
+                <div
+                  class="hh-points"
+                  v-for="(item, index) in funds"
+                  :key="index"
+                  :style="{ width: `${n}%`, marginLeft: `${n * item.week}%` }"
+                  :class="{ opacity: item.opacity }"
+                >
+                  <span>{{ item.count }}%</span>
+                </div>
+              </div>
+            </div>
             <div class="block-with-tasks" v-for="(item, index) in tasks" :key="index">
               <div class="tasks-title-2" @click="show = (index + 1)">
                 <div class="box-task" v-if="show != (index + 1)">+</div>
@@ -49,24 +62,38 @@
         </div>
 
         <div class="matrix">
-          <div class="matrix-item" v-for="(item, index) in calend" :key="index" :class="{active: index > 1}">
+          <div
+            class="matrix-item"
+            v-for="(item, index) in calend"
+            :key="index"
+            :class="{active: index > 1}"
+          >
             <div class="matrix-year">{{ item.name }} {{ year }}</div>
             <div class="matrix-col" :class="{ active: isDays < 7 && item.index == isM }">
               <div class="matrix-name">
                 <span>w1</span>
               </div>
             </div>
-            <div class="matrix-col" :class="{ active: isDays > 7 && isDays <= 14 && item.index == isM }">
+            <div
+              class="matrix-col"
+              :class="{ active: isDays > 7 && isDays <= 14 && item.index == isM }"
+            >
               <div class="matrix-name">
                 <span>w2</span>
               </div>
             </div>
-            <div class="matrix-col"  :class="{ active: isDays > 15 && isDays <= 21 && item.index == isM }">
+            <div
+              class="matrix-col"
+              :class="{ active: isDays > 15 && isDays <= 21 && item.index == isM }"
+            >
               <div class="matrix-name">
                 <span>w3</span>
               </div>
             </div>
-            <div class="matrix-col" :class="{ active: isDays > 21 && isDays <= 31 && item.index == isM }">
+            <div
+              class="matrix-col"
+              :class="{ active: isDays > 21 && isDays <= 31 && item.index == isM }"
+            >
               <div class="matrix-name">
                 <span>w4</span>
               </div>
@@ -83,6 +110,10 @@ export default {
   data() {
     return {
       show: 1,
+      funds: [
+        { week: 3, count: 82, opacity: true },
+        { week: 7, count: 76, opacity: false }
+      ],
       tasks: [
         {
           name: "Setup",
@@ -242,16 +273,12 @@ export default {
             },
             {
               task: "Authentification via Discord account",
-              points: [
-                { name: 100, isSpan: false, isOpacity: false } 
-              ],
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
               week: 8
             },
             {
               task: "Linking profile to Discord account",
-              points: [
-                { name: 100, isSpan: false, isOpacity: false } 
-              ],
+              points: [{ name: 100, isSpan: false, isOpacity: false }],
               week: 8
             },
             {
@@ -1480,18 +1507,18 @@ export default {
       ],
       n: "",
       calendar: [
-        { name: 'January', index: 0 },
-        { name: 'February', index: 1 },
-        { name: 'March', index: 2 },
-        { name: 'April', index: 3 },
-        { name: 'May', index: 4 },
-        { name: 'June', index: 5 },
-        { name: 'July', index: 6 },
-        { name: 'August', index: 7 },
-        { name: 'September', index: 8 },
-        { name: 'October', index: 9 },
-        { name: 'November', index: 10 },
-        { name: 'December', index: 11 }
+        { name: "January", index: 0 },
+        { name: "February", index: 1 },
+        { name: "March", index: 2 },
+        { name: "April", index: 3 },
+        { name: "May", index: 4 },
+        { name: "June", index: 5 },
+        { name: "July", index: 6 },
+        { name: "August", index: 7 },
+        { name: "September", index: 8 },
+        { name: "October", index: 9 },
+        { name: "November", index: 10 },
+        { name: "December", index: 11 }
       ],
       isMonth: 0,
       isIndex: 1,
@@ -1509,7 +1536,10 @@ export default {
       // eslint-disable-next-line vue/no-side-effects-in-computed-properties
       this.isMonth = this.index.prev + 1;
 
-      return this.calendar.slice((this.isMonth - 4) < 0 ? 0 : this.isMonth - 4, this.isMonth)
+      return this.calendar.slice(
+        this.isMonth - 4 < 0 ? 0 : this.isMonth - 4,
+        this.isMonth
+      );
     }
   },
   mounted() {

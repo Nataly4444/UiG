@@ -19,6 +19,41 @@
     margin: 0 auto;
 }
 
+.hh {
+    width: 254%;
+    position: absolute;
+    top: 0;
+    left: 115.9%;
+    bottom: 0;
+    align-items: center;
+}
+
+.hh-points {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hh-points span {
+    color: #fff;
+    height: 22px;
+    font-size: 12px;
+    line-height: 1;
+    border-radius: 20px;
+    background: #3282FA;
+    padding: 0 7px;
+    display: flex;
+    align-items: center;
+}
+
+.hh-points.opacity span {
+    color: rgba(255,255,255,.5);
+}
+
 .tasks-title {
     color: #33334B;
     font-style: normal;
@@ -26,6 +61,7 @@
     font-size: 17px;
     line-height: 20px;
     margin: 26px 0;
+    position: relative;
 }
 
 .tasks-title-2 {
